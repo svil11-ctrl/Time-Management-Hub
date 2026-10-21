@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор продуктивности</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="planer.html">Планировщик</a></li>
+            <li><a href="time.html">Таймер</a></li>
+            <li><a href="kalkulator.html">Калькулятор</a></li>
+            <li><a href="recom.html">Рекомендациями</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+        </ul>
+    </nav>
+    
+<h1>Калькулятор продуктивности</h1>
+    <div class="text">
+        <h2>Оцените баланс своего времени</h2>
+        <h3>Введите количество часов, потраченных на различные сферы за день, чтобы узнать уровень продуктивности.</h3>
+    </div>
+
+    <div class="app-container">
+        <section class="card-section calculator-section">
+            <div class="productivity-card">
+                <div class="input-group">
+                    <label for="work-hours">Работа (часов):</label>
+                    <input type="number" id="work-hours" min="0" max="24" value="0">
+                </div>
+                
+                <div class="input-group">
+                    <label for="study-hours">Учеба (часов):</label>
+                    <input type="number" id="study-hours" min="0" max="24" value="0">
+                </div>
+                
+                <div class="input-group">
+                    <label for="rest-hours">Отдых (часов):</label>
+                    <input type="number" id="rest-hours" min="0" max="24" value="0">
+                </div>
+                
+                <div class="input-group">
+                    <label for="entertainment-hours">Развлечения (часов):</label>
+                    <input type="number" id="entertainment-hours" min="0" max="24" value="0">
+                </div>
+
+                <button id="calc-prod-btn" class="btn-start">Рассчитать продуктивность</button>
+
+                <div id="result-container" class="result-box" style="display: none;">
+                    <h3>Результаты анализа:</h3>
+                    <p id="prod-text"></p>
+                    
+                    <div class="progress-bar-container">
+                        <div id="prod-progress" class="progress-bar-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="kalkulator.js"></script>
+</body>
+</html>

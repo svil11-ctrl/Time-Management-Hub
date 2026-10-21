@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Планировщик задач</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="planer.html">Планировщик</a></li>
+            <li><a href="time.html">Таймер</a></li>
+            <li><a href="kalkulator.html">Калькулятор</a></li>
+            <li><a href="recom.html">Рекомендациями</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+        </ul>
+    </nav>
+    <div>
+        <h1>Интерактивный планировщик задач</h1>
+        <div class="text">
+            <h2>Организуйте свой день и держите всё под контролем.</h2>
+            <h3>Создавайте задачи, распределяйте их по категориям, устанавливайте приоритеты и отслеживайте время выполнения. Все внесенные данные автоматически сохраняются в вашем браузере, поэтому ваш список всегда под рукой.</h3>
+        </div>
+        <div class="forms">
+            <h1>Ваш список задач</h1>
+            <form class="to-do">
+                <input type="text" id="task" placeholder="Напишите вашу задачу">
+                <select id="task-priority">
+                    <option value="1">🟢 Низкий</option>
+                    <option value="2" selected>🟡 Средний</option>
+                    <option value="3">🔴 Высокий</option>
+                </select>
+                <button type="submit">Добавить</button>
+            </form>
+            <ul id="task-list"></ul>
+        </div>
+    </div>
+
+    <script src="planer.js"></script>
+</body>
+</html>
